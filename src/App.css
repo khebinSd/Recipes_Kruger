@@ -1,0 +1,26 @@
+.path{
+    z-index: 6000;
+}
+.path1{
+    stroke: black; 
+    stroke-width: 1;
+    transform-origin: 33.47285199% 32.89218482%; 
+    animation-duration: 3s; 
+    fill: var(--tw-gradient-from)
+}
+.path2{
+    stroke: black;
+    stroke-width: 1;
+    transform-origin: 74.01464945% 74.46662863%;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    fill: var(--tw-gradient-from);
+}
+.path3{
+    stroke: black;
+    stroke-width: 1;
+    transform-origin: 78.02581095% 16.12093553%;
+    animation-duration: 3.5s;
+    animation-direction: reverse;
+    fill: var(--tw-gradient-from);
+}

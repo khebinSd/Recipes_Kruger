@@ -3,6 +3,7 @@ import { startLoginWithEmailPassword } from "../../store/auth/thunks";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "../styles/Login-Register-Layout.css";
+import { useState } from "react";
 
 export default function LoginPage() {
 	const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function LoginPage() {
 		},
 		validationSchema: loginSchema,
 		onSubmit: (data) => {
+
 			let email = data.email;
 			let password = data.password;
 			dispatch(startLoginWithEmailPassword({ email, password }));
