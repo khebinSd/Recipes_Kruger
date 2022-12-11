@@ -90,8 +90,8 @@ export default function DetailsRecipies() {
 		<>
 			<Navbar />
 			<div className="flex items-center justify-center w-full min-h-screen">
-				<div className="flex flex-col w-full max-w-4xl p-10 space-y-6 text-white shadow-lg md:flex-row md:space-x-6 md:space-y-0 rounded-xl max-sm:w-auto max-sm:my-5">
-					<div className="flex flex-col  p-8 space-y-8 text-gray-600 bg-white shadow-lg rounded-xl w-8/12">
+				<div className="flex flex-col w-full max-w-4xl xl:p-10 space-y-6 text-white bg-white shadow-lg max-sm:bg-none max-sm:shadow-none md:flex-row md:space-x-6 md:space-y-0 rounded-xl  max-sm:my-5">
+					<div className="flex flex-col p-8 space-y-8 text-gray-600 shadow-lg rounded-xl max-sm:w-80 max-sm:mx-5">
 						<div className="my-5">
 							{hasId ? (
 								<h3 className="text-lg font-bold">{infos.label}</h3>
@@ -125,7 +125,7 @@ export default function DetailsRecipies() {
 							</div>
 						</div>
 					</div>
-					<div className="w-10/12 p-8 text-gray-600 bg-white shadow-lg rounded-xl max-sm:w-96">
+					<div className="w-12/12 p-8 text-gray-600 bg-white shadow-lg rounded-xl max-sm:w-80 max-sm:mx-5">
 						<div className="flex flex-col space-y-4">
 							<div className="flex justify-center border-b-2">
 								<h1 className="my-2 text-lg font-bold">Details</h1>
@@ -159,11 +159,11 @@ export default function DetailsRecipies() {
 								)}
 								<div className="divider"></div>
 								{!isSaved && hasId && (
-									<div className="flex justify-end mt-5 gap-4">
-										<button className="btn btn-info" onClick={handleSave}>
+									<div className="flex justify-end mt-5 gap-2">
+										<button className="btn btn-info w-50 max-sm:text-xs" onClick={handleSave}>
 											Agregar a mis recetas
 										</button>
-										<button className="btn btn-success" onClick={handleReturn}>Volver</button>
+										<button className="btn btn-success max-sm:text-xs" onClick={handleReturn}>Volver</button>
 									</div>
 								)}
 							</div>
